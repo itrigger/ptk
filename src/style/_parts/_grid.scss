@@ -24,7 +24,7 @@ h2 {
 }
 .container{
   margin: 0 auto;
- // max-width: 1110px;
+  max-width: 1800px;
   width: 100%;
 }
 .row{
@@ -52,7 +52,8 @@ h2 {
 
 
 .col-to-end{grid-column-end: -1 !important;}
-
+.col-start-2{grid-column-start: 2;}
+.span-10-c{grid-column: -2 / 2;}
 .row-2{
   grid-row: 1 / span 2;
 }

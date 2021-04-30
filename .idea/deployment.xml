@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="ptk" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="ptk">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/css" local="$PROJECT_DIR$/build/css" web="/" />
+            <mapping deploy="/img" local="$PROJECT_DIR$/build/img" web="/" />
+            <mapping deploy="/js" local="$PROJECT_DIR$/build/js" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/build" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

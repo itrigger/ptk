@@ -348,6 +348,7 @@ h2 {
 
 .container {
   margin: 0 auto;
+  max-width: 1800px;
   width: 100%; }
 
 .row {
@@ -395,6 +396,12 @@ h2 {
 
 .col-to-end {
   grid-column-end: -1 !important; }
+
+.col-start-2 {
+  grid-column-start: 2; }
+
+.span-10-c {
+  grid-column: -2 / 2; }
 
 .row-2 {
   grid-row: 1 / span 2; }
@@ -826,7 +833,6 @@ a:focus, a:active {
     left: 0;
     width: 100%;
     height: 76px;
-    background-image: url("../img/btnwave.svg");
     background-position: 0% 0%;
     transition: 1s all; }
   .btn:hover, .btn.active {
@@ -912,5 +918,23 @@ table {
     padding: 5px;
     border: 1px solid #80687f;
     font-size: 12px; }
+
+.header {
+  height: 133px; }
+
+.logo {
+  display: block;
+  width: 166px;
+  height: 49px;
+  background: url("../img/logo.png") 0 0 no-repeat;
+  background-size: contain; }
+
+.slider {
+  background: url("../img/slide.jpg") center center no-repeat;
+  height: calc(100vh - 133px);
+  color: #fff; }
+  .slider h1 {
+    font-size: 6vmax;
+    line-height: 1.2; }
 
 /*# sourceMappingURL=main.css.map */
