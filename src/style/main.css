@@ -809,14 +809,14 @@ a:focus, a:active {
   margin-right: 25px; }
 
 .btn {
-  padding: 5px 30px;
+  padding: 15px 30px;
   display: inline-flex;
   color: #fff;
   background: #A80010;
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
