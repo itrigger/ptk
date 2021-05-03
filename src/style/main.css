@@ -809,18 +809,16 @@ a:focus, a:active {
   margin-right: 25px; }
 
 .btn {
-  padding: 0 12px;
+  padding: 5px 30px;
   display: inline-flex;
-  min-width: 210px;
-  height: 60px;
-  color: #E24B33;
+  color: #fff;
+  background: #A80010;
   align-items: center;
   justify-content: center;
-  border: 2px solid #E24B33;
-  font-size: 12px;
+  border: 2px solid #A80010;
+  font-size: 16px;
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-weight: 500;
   position: relative;
   overflow: hidden;
   transition: 1s color; }
@@ -837,7 +835,6 @@ a:focus, a:active {
     background-position: 0% 0%;
     transition: 1s all; }
   .btn:hover, .btn.active {
-    color: #fff;
     transition: 1s color; }
     .btn:hover:before, .btn.active:before {
       top: -19px;
