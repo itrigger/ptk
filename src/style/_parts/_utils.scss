@@ -81,7 +81,7 @@ a:focus, a:active {
 }
 
 .c_w {
-  color: #fff;
+  color: #fff !important;
 }
 
 .ai_c {
@@ -242,9 +242,8 @@ a:focus, a:active {
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   position: relative;
   overflow: hidden;
   transition: 1s color;
@@ -335,6 +334,13 @@ a:focus, a:active {
       }
     }
   }
+}
+
+input[type=submit].btn{
+  background-image: url('../img/arr-w.svg');
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  padding-right: 47px;
 }
 
 @keyframes btnBg {

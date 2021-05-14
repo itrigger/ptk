@@ -349,7 +349,7 @@ h2 {
 .container {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 1800px;
+  max-width: 1600px;
   width: 100%; }
 
 .row {
@@ -403,6 +403,8 @@ h2 {
 
 .span-10-c {
   grid-column: -2 / 2; }
+  .span-10-c .container {
+    padding: 0; }
 
 .row-2 {
   grid-row: 1 / span 2; }
@@ -697,7 +699,7 @@ a:focus, a:active {
   position: absolute; }
 
 .c_w {
-  color: #fff; }
+  color: #fff !important; }
 
 .ai_c {
   align-items: center; }
@@ -816,9 +818,8 @@ a:focus, a:active {
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   position: relative;
   overflow: hidden;
   transition: 1s color; }
@@ -877,6 +878,12 @@ a:focus, a:active {
       .btn.btn-green:hover:before {
         display: none; }
 
+input[type=submit].btn {
+  background-image: url("../img/arr-w.svg");
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  padding-right: 47px; }
+
 @keyframes btnBg {
   0% {
     background-position-x: 0; }
@@ -917,6 +924,27 @@ table {
     border: 1px solid #80687f;
     font-size: 12px; }
 
+.ico {
+  display: inline-block; }
+
+.ico-left {
+  margin-right: 8px; }
+
+.ico-wt {
+  background: url("../img/ico-wt.svg") 0 0 no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.ico-email {
+  background: url("../img/ico-mail.svg") 0 0 no-repeat;
+  width: 32px;
+  height: 26px; }
+
+.ico-tel {
+  background: url("../img/ico-tel.svg") 0 0 no-repeat;
+  width: 31px;
+  height: 32px; }
+
 .header {
   height: 100px;
   color: #000; }
@@ -930,6 +958,8 @@ table {
   background: url("../img/img.png") center center no-repeat;
   background-size: cover;
   height: calc(100vh - 100px);
+  min-height: 515px;
+  max-height: 700px;
   color: #fff;
   position: relative; }
   .slider:before {
@@ -943,15 +973,15 @@ table {
     background: #000;
     opacity: 0.7; }
   .slider h1 {
-    font-size: 5vmax;
+    font-size: 3.8vmax;
     line-height: 1.2; }
   .slider .slogan {
     font-weight: 800;
     margin-bottom: 45px;
-    font-size: 2vmax;
+    font-size: 1.7vmax;
     line-height: 1.2; }
   .slider p {
-    font-size: 2vmax;
+    font-size: 1.7vmax;
     line-height: 1.2; }
     .slider p span {
       display: block; }
@@ -962,5 +992,169 @@ table {
 
 .img img {
   max-width: 100%; }
+
+.form {
+  border: 9px solid #A80010;
+  background: #F8F8F8;
+  color: #000;
+  padding: 30px;
+  width: 100%; }
+  .form .head {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px; }
+  .form .form-control {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: none; }
+
+h2.head {
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.service1 .img {
+  margin-top: 20px; }
+.service1 .name {
+  font-size: 30px;
+  font-weight: 600; }
+.service1 .ico-c1:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 107px;
+  height: 72px;
+  background: url("../img/main-ico-1.svg") 0 0 no-repeat; }
+.service1 .ico-c2:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  width: 109px;
+  height: 101px;
+  background: url("../img/main-ico-2.svg") 0 0 no-repeat; }
+.service1 .ico-c3:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 98px;
+  height: 98px;
+  background: url("../img/main-ico-3.svg") 0 0 no-repeat; }
+.service1 .ico-c4:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 135px;
+  height: 81px;
+  background: url("../img/main-ico-4.svg") 0 0 no-repeat; }
+.service1 .icos {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 100px;
+  padding-left: 124px;
+  position: relative; }
+  .service1 .icos span {
+    display: block; }
+
+.vagon {
+  position: relative; }
+  .vagon:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -230px;
+    right: 0;
+    width: 1034px;
+    height: 623px;
+    background: url("../img/main-bg-1.svg") 0 0 no-repeat;
+    z-index: -1; }
+
+.buy-sale {
+  margin-top: 50px; }
+
+.red-bg {
+  background: url("../img/red-bg.jpg") 0 0 repeat;
+  height: 593px;
+  padding-top: 100px; }
+  .red-bg img {
+    margin-bottom: 40px; }
+  .red-bg .text {
+    font-size: 24px; }
+
+.d1 {
+  background: url("../img/1.svg") 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0; }
+
+.d2 {
+  background: url("../img/2.svg") 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0; }
+
+.d3 {
+  background: url("../img/3.svg") 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0; }
+
+.d4 {
+  background: url("../img/4.svg") 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0; }
+
+.about {
+  background: url("../img/about-bg.jpg") center top no-repeat;
+  height: 651px;
+  color: #fff; }
+  .about .check {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 55px;
+    padding-left: 100px;
+    position: relative; }
+    .about .check:before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 15px;
+      top: 0;
+      background: url("../img/ico-check.svg") 0 0 no-repeat; }
+
+#map {
+  position: relative;
+  height: 544px; }
+  #map .pos_a {
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%); }
+  #map .form {
+    margin-top: 35px; }
 
 /*# sourceMappingURL=main.css.map */

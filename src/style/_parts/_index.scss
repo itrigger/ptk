@@ -1,10 +1,13 @@
-.slider{
+.slider {
   background: url('../img/img.png') center center no-repeat;
   background-size: cover;
   height: calc(100vh - 100px);
+  min-height: 515px;
+  max-height: 700px;
   color: #fff;
   position: relative;
-  &:before{
+
+  &:before {
     content: '';
     display: block;
     position: absolute;
@@ -15,33 +18,237 @@
     background: #000;
     opacity: 0.7;
   }
-  h1{
-    font-size: 5vmax;
+
+  h1 {
+    font-size: 3.8vmax;
     line-height: 1.2;
 
   }
-  .slogan{
+
+  .slogan {
     font-weight: 800;
     margin-bottom: 45px;
-    font-size: 2vmax;
+    font-size: 1.7vmax;
     line-height: 1.2;
   }
-  p{
-    font-size: 2vmax;
+
+  p {
+    font-size: 1.7vmax;
     line-height: 1.2;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.split {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  img {
+    max-width: 100%;
+  }
+}
+
+.form{
+  border: 9px solid #A80010;
+  background: #F8F8F8;
+  color: #000;
+  padding: 30px;
+  width: 100%;
+  .head{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  .form-control{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: none;
+  }
+}
+
+
+h2.head{
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.service1{
+  .img{
+    margin-top: 20px;
+  }
+  .name{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .ico-c1{
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 107px;
+      height: 72px;
+      background: url('../img/main-ico-1.svg') 0 0 no-repeat;
+    }
+  }
+  .ico-c2{
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: -10px;
+      width: 109px;
+      height: 101px;
+      background: url('../img/main-ico-2.svg') 0 0 no-repeat;
+    }
+  }
+  .ico-c3{
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -10px;
+      width: 98px;
+      height: 98px;
+      background: url('../img/main-ico-3.svg') 0 0 no-repeat;
+    }
+  }
+  .ico-c4{
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 0;
+      width: 135px;
+      height: 81px;
+      background: url('../img/main-ico-4.svg') 0 0 no-repeat;
+    }
+  }
+  .icos{
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 100px;
+    padding-left: 124px;
+    position: relative;
     span{
       display: block;
     }
   }
 }
 
-.split{
+.vagon{
   position: relative;
-  overflow: hidden;
+  &:after{
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -230px;
+    right: 0;
+    width: 1034px;
+    height: 623px;
+    background: url('../img/main-bg-1.svg') 0 0 no-repeat;
+    z-index: -1;
+  }
 }
 
-.img{
+.buy-sale{
+  margin-top: 50px;
+}
+
+.red-bg{
+  background: url('../img/red-bg.jpg') 0 0 repeat;
+  height: 593px;
+  padding-top: 100px;
   img{
-max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .text{
+    font-size: 24px;
+  }
+}
+
+.d1{
+  background: url('../img/1.svg') 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0;
+}
+.d2{
+  background: url('../img/2.svg') 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0;
+}
+.d3{
+  background: url('../img/3.svg') 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0;
+}
+.d4{
+  background: url('../img/4.svg') 0 0 no-repeat;
+  width: 354px;
+  height: 415px;
+  background-size: contain;
+  padding: 45px 28px 0;
+}
+
+.about{
+  background: url('../img/about-bg.jpg') center top no-repeat;
+  height: 651px;
+  color: #fff;
+  .check{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 55px;
+    padding-left: 100px;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 15px;
+      top: 0;
+      background: url('../img/ico-check.svg') 0 0 no-repeat;
+    }
+  }
+}
+
+#map{
+  position: relative;
+  height: 544px;
+  .pos_a{
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .form{
+    margin-top: 35px;
   }
 }
