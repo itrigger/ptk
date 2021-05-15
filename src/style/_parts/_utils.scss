@@ -13,7 +13,9 @@ a:focus, a:active {
 .ta-c {
   text-align: center;
 }
-
+.ta-r{
+  text-align: right;
+}
 .w_100 {
   width: 100%;
 }
@@ -242,7 +244,7 @@ a:focus, a:active {
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   position: relative;
   overflow: hidden;

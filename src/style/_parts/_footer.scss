@@ -1,0 +1,24 @@
+footer{
+  background: url('../img/footbg.png') repeat;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  a{
+    color: #fff;
+  }
+  .head{
+    color: #BFBFBF;
+    margin-bottom: 40px;
+  }
+}
+.footlogo{
+  background: url('../img/footlogo.svg') 0 0 no-repeat;
+  width: 170px;
+  height: 53px;
+}
+.developer{
+  font-size: 15px;
+}

@@ -349,7 +349,7 @@ h2 {
 .container {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 1600px;
+  max-width: 1440px;
   width: 100%; }
 
 .row {
@@ -647,6 +647,9 @@ a:focus, a:active {
 .ta-c {
   text-align: center; }
 
+.ta-r {
+  text-align: right; }
+
 .w_100 {
   width: 100%; }
 
@@ -818,7 +821,7 @@ a:focus, a:active {
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   position: relative;
   overflow: hidden;
@@ -932,8 +935,9 @@ table {
 
 .ico-wt {
   background: url("../img/ico-wt.svg") 0 0 no-repeat;
-  width: 50px;
-  height: 50px; }
+  width: 40px;
+  height: 40px;
+  background-size: contain; }
 
 .ico-email {
   background: url("../img/ico-mail.svg") 0 0 no-repeat;
@@ -959,7 +963,7 @@ table {
   background-size: cover;
   height: calc(100vh - 100px);
   min-height: 515px;
-  max-height: 700px;
+  max-height: 530px;
   color: #fff;
   position: relative; }
   .slider:before {
@@ -1005,9 +1009,9 @@ table {
     margin-bottom: 30px; }
   .form .form-control {
     width: 100%;
-    font-size: 20px;
-    font-weight: 600;
-    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 20px;
@@ -1015,7 +1019,7 @@ table {
     border: none; }
 
 h2.head {
-  font-size: 64px;
+  font-size: 46px;
   font-weight: 800;
   text-align: center;
   color: #000;
@@ -1025,7 +1029,7 @@ h2.head {
 .service1 .img {
   margin-top: 20px; }
 .service1 .name {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600; }
 .service1 .ico-c1:before {
   display: block;
@@ -1033,42 +1037,46 @@ h2.head {
   position: absolute;
   left: 0;
   top: 0;
-  width: 107px;
-  height: 72px;
-  background: url("../img/main-ico-1.svg") 0 0 no-repeat; }
+  width: 87px;
+  height: 59px;
+  background: url("../img/main-ico-1.svg") 0 0 no-repeat;
+  background-size: contain; }
 .service1 .ico-c2:before {
   display: block;
   content: '';
   position: absolute;
   left: -20px;
   top: -10px;
-  width: 109px;
-  height: 101px;
-  background: url("../img/main-ico-2.svg") 0 0 no-repeat; }
+  width: 89px;
+  height: 83px;
+  background: url("../img/main-ico-2.svg") 0 0 no-repeat;
+  background-size: contain; }
 .service1 .ico-c3:before {
   display: block;
   content: '';
   position: absolute;
   left: 0;
   top: -10px;
-  width: 98px;
-  height: 98px;
-  background: url("../img/main-ico-3.svg") 0 0 no-repeat; }
+  width: 78px;
+  height: 78px;
+  background: url("../img/main-ico-3.svg") 0 0 no-repeat;
+  background-size: contain; }
 .service1 .ico-c4:before {
   display: block;
   content: '';
   position: absolute;
   left: -40px;
   top: 0;
-  width: 135px;
-  height: 81px;
-  background: url("../img/main-ico-4.svg") 0 0 no-repeat; }
+  width: 108px;
+  height: 65px;
+  background: url("../img/main-ico-4.svg") 0 0 no-repeat;
+  background-size: contain; }
 .service1 .icos {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 600;
   margin-top: 100px;
-  padding-left: 124px;
+  padding-left: 110px;
   position: relative; }
   .service1 .icos span {
     display: block; }
@@ -1091,49 +1099,49 @@ h2.head {
 
 .red-bg {
   background: url("../img/red-bg.jpg") 0 0 repeat;
-  height: 593px;
+  height: 553px;
   padding-top: 100px; }
   .red-bg img {
     margin-bottom: 40px; }
   .red-bg .text {
-    font-size: 24px; }
+    font-size: 18px; }
 
 .d1 {
   background: url("../img/1.svg") 0 0 no-repeat;
-  width: 354px;
-  height: 415px;
+  width: 295px;
+  height: 345px;
   background-size: contain;
   padding: 45px 28px 0; }
 
 .d2 {
   background: url("../img/2.svg") 0 0 no-repeat;
-  width: 354px;
-  height: 415px;
+  width: 295px;
+  height: 345px;
   background-size: contain;
   padding: 45px 28px 0; }
 
 .d3 {
   background: url("../img/3.svg") 0 0 no-repeat;
-  width: 354px;
-  height: 415px;
+  width: 295px;
+  height: 345px;
   background-size: contain;
   padding: 45px 28px 0; }
 
 .d4 {
   background: url("../img/4.svg") 0 0 no-repeat;
-  width: 354px;
-  height: 415px;
+  width: 295px;
+  height: 345px;
   background-size: contain;
   padding: 45px 28px 0; }
 
 .about {
   background: url("../img/about-bg.jpg") center top no-repeat;
-  height: 651px;
+  height: 530px;
   color: #fff; }
   .about .check {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 55px;
     padding-left: 100px;
     position: relative; }
@@ -1144,7 +1152,7 @@ h2.head {
       height: 50px;
       position: absolute;
       left: 15px;
-      top: 0;
+      top: 10px;
       background: url("../img/ico-check.svg") 0 0 no-repeat; }
 
 #map {
@@ -1156,5 +1164,46 @@ h2.head {
     transform: translateX(-50%); }
   #map .form {
     margin-top: 35px; }
+  #map .container {
+    pointer-events: none; }
+  #map .form {
+    pointer-events: all; }
+    #map .form .tel {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      display: inline-block;
+      text-align: center; }
+    #map .form .address {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 25px; }
+    #map .form .text {
+      font-weight: 800;
+      color: #4D4D4D;
+      font-size: 18px;
+      margin-bottom: 15px; }
+
+footer {
+  background: url("../img/footbg.png") repeat;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2; }
+  footer a {
+    color: #fff; }
+  footer .head {
+    color: #BFBFBF;
+    margin-bottom: 40px; }
+
+.footlogo {
+  background: url("../img/footlogo.svg") 0 0 no-repeat;
+  width: 170px;
+  height: 53px; }
+
+.developer {
+  font-size: 15px; }
 
 /*# sourceMappingURL=main.css.map */
