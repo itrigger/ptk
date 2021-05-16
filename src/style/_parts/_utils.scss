@@ -249,7 +249,7 @@ a:focus, a:active {
   position: relative;
   overflow: hidden;
   transition: 1s color;
-
+  white-space: nowrap;
   & > * {
     position: relative;
   }

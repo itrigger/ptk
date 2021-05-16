@@ -1,0 +1,79 @@
+@media (min-width: 769px) and (max-width: 1279px){
+  .red-bg{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .d1, .d2, .d3, .d4{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  h2.head{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .span-10-c{
+    grid-column: -1 / 1;
+  }
+  .service1 .name{
+    font-size: 20px;
+  }
+  .service1 .icos{
+    font-size: 16px;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .service1 .ico-c1:before{
+    width: 67px;
+    height: 45px;
+  }
+  .service1 .ico-c2:before{
+    width: 65px;
+    height: 60px;
+    left: 0;
+    top: 0;
+  }
+  .service1 .ico-c3:before{
+    width: 65px;
+    height: 60px;
+    top: 0;
+  }
+  .service1 .ico-c4:before{
+    width: 88px;
+    height: 53px;
+    left: -20px;
+  }
+  .vagon:after{
+    background-size: contain;
+    width: 504px;
+    height: 364px;
+  }
+  .buy-sale{
+    margin-top: 30px;
+  }
+  .about{
+    height: auto;
+  }
+  .about .check{
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1460px){
+  h2.head{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #map .form .tel{
+    font-size: 33px;
+  }
+  .d1, .d2, .d3, .d4{
+    max-width: 100%;
+  }
+  .red-bg .text {
+    font-size: 16px;
+  }
+}

@@ -92,6 +92,7 @@ h2.head{
     margin-top: 20px;
   }
   .name{
+    margin-top: 20px;
     font-size: 25px;
     font-weight: 600;
   }
@@ -246,7 +247,7 @@ h2.head{
 
 #map{
   position: relative;
-  height: 544px;
+  height: 565px;
   .pos_a{
     z-index: 99;
     left: 50%;
@@ -263,7 +264,7 @@ h2.head{
     .tel{
       font-size: 40px;
       font-weight: 800;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       display: inline-block;
       text-align: center;
     }
