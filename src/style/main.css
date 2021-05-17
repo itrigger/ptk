@@ -586,7 +586,6 @@ h2 {
     grid-template-columns: repeat(12, 1fr);
     max-width: 1120px;
     grid-gap: 10px;
-    padding: 0 20px;
     margin: 0 auto;
     position: relative; }
 
@@ -941,9 +940,9 @@ table {
   background-size: contain; }
 
 .ico-email {
-  background: url("../img/ico-mail.svg") 0 0 no-repeat;
+  background: url("../img/mail.svg") 0 0 no-repeat;
   width: 32px;
-  height: 26px; }
+  height: 32px; }
 
 .ico-tel {
   background: url("../img/ico-tel.svg") 0 0 no-repeat;
@@ -1157,34 +1156,41 @@ h2.head {
       top: 10px;
       background: url("../img/ico-check.svg") 0 0 no-repeat; }
 
-#map {
+#map_container {
+  height: 565px;
+  width: 100%; }
+
+.map {
   position: relative;
   height: 565px; }
-  #map .pos_a {
+  .map .pos_a {
     z-index: 99;
     left: 50%;
     transform: translateX(-50%); }
-  #map .form {
+  .map .form {
     margin-top: 35px; }
-  #map .container {
+  .map .container {
     pointer-events: none; }
-  #map .form {
+  .map .form {
     pointer-events: all; }
-    #map .form .tel {
+    .map .form .tel {
       font-size: 40px;
       font-weight: 800;
       margin-bottom: 20px;
       display: inline-block;
       text-align: center; }
-    #map .form .address {
+    .map .form .address {
       font-size: 18px;
       font-weight: 800;
       margin-bottom: 25px; }
-    #map .form .text {
+    .map .form .text {
       font-weight: 800;
       color: #4D4D4D;
       font-size: 18px;
       margin-bottom: 15px; }
+
+.mobile {
+  display: none; }
 
 footer {
   background: url("../img/footbg.png") repeat;
@@ -1208,15 +1214,251 @@ footer {
 .developer {
   font-size: 15px; }
 
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (max-width: 768px) {
+  .mobile {
+    display: inherit; }
+
+  .desktop {
+    display: none; }
+
+  .container {
+    padding: 0 20px; }
+
+  .header {
+    height: 70px; }
+
+  .slider {
+    height: calc(100vh - 70px);
+    min-height: auto;
+    max-height: none; }
+
+  .logo {
+    width: 116px; }
+    .logo svg {
+      max-width: 100%; }
+
+  .tt_wt,
+  .tt_mail,
+  .tt_tel {
+    font-size: 0; }
+
+  .tt_mail,
+  .tt_form {
+    display: none; }
+
+  #slideform {
+    display: none; }
+
+  .slider h1 {
+    font-size: 6vmax; }
+
+  .slider .btn {
+    margin-top: 20px;
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0; }
+
+  .slider .slogan {
+    font-size: 2.7vmax; }
+
+  .slider p {
+    font-size: 2.7vmax; }
+
   .red-bg {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px; }
 
+  .red-bg img {
+    max-width: 100px;
+    height: auto; }
+
+  .red-bg .text {
+    font-size: 16px; }
+
   .d1, .d2, .d3, .d4 {
-    max-width: 100%;
-    margin: 0 auto; }
+    max-width: 80%;
+    margin: 0 auto;
+    height: 314px; }
+
+  h2.head {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .span-10-c {
+    grid-column: -1 / 1; }
+
+  .service1 .name {
+    font-size: 20px; }
+
+  .service1 .icos {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center; }
+
+  .service1 .ico-c1:before {
+    width: 67px;
+    height: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px; }
+
+  .service1 .ico-c2:before {
+    width: 65px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px; }
+
+  .service1 .ico-c3:before {
+    width: 65px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px; }
+
+  .service1 .ico-c4:before {
+    width: 88px;
+    height: 53px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px; }
+
+  .vagon:after {
+    background-size: contain;
+    width: 504px;
+    height: 364px; }
+
+  .buy-sale {
+    margin-top: 30px; }
+
+  .form .head {
+    font-size: 24px; }
+
+  .about {
+    height: auto; }
+
+  .about .check {
+    font-size: 14px;
+    padding-left: 50px;
+    margin-bottom: 35px; }
+
+  .about .check:before {
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    left: 10px; }
+
+  .map {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto; }
+
+  #map_container {
+    position: relative;
+    height: 350px; }
+
+  .map .container {
+    position: relative;
+    margin-bottom: 40px; }
+
+  .map .form {
+    margin-top: 0; }
+
+  .map .form .tel {
+    font-size: 20px; }
+    .map .form .tel .ico-tel {
+      width: 21px;
+      height: 22px;
+      background-size: contain; }
+
+  .map .form .address {
+    font-size: 16px; }
+
+  .map .form .text {
+    font-size: 15px; }
+
+  .form .form-control {
+    height: 45px;
+    font-size: 15px;
+    padding: 0 15px; }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 14px; }
+    .footer .ta-r {
+      text-align: left; }
+    .footer .col-3 {
+      margin-bottom: 15px; }
+
+  footer .head {
+    margin-bottom: 10px; }
+
+  .developer {
+    font-size: 13px; }
+
+  .footlogo {
+    width: 130px;
+    background-size: contain; } }
+@media (min-width: 769px) and (max-width: 1279px) {
+  .mobile {
+    display: inherit; }
+
+  .desktop {
+    display: none; }
+
+  .logo {
+    width: 116px; }
+    .logo svg {
+      max-width: 100%; }
+
+  .tt_wt,
+  .tt_mail,
+  .tt_tel {
+    font-size: 0; }
+
+  .tt_wt {
+    margin-left: auto; }
+
+  #slideform {
+    display: none; }
+
+  .slider h1 {
+    font-size: 6vmax; }
+
+  .slider .btn {
+    margin-top: 20px;
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0; }
+
+  .slider .slogan {
+    font-size: 2.7vmax; }
+
+  .slider p {
+    font-size: 2.7vmax; }
+
+  .slider {
+    min-height: 295px;
+    max-height: 350px; }
+
+  .red-bg {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+  .red-bg img {
+    max-width: 100px;
+    height: auto; }
+
+  .d1, .d2, .d3, .d4 {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 314px; }
 
   h2.head {
     font-size: 35px;
@@ -1266,14 +1508,48 @@ footer {
     height: auto; }
 
   .about .check {
-    font-size: 16px; } }
+    font-size: 16px;
+    padding-left: 70px; }
+
+  .about .check:before {
+    background-size: contain;
+    width: 35px;
+    height: 35px; }
+
+  .map {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto; }
+
+  #map_container {
+    position: relative;
+    height: 350px; }
+
+  .map .container {
+    position: relative;
+    margin-bottom: 40px; }
+
+  .map .form {
+    margin-top: 0; }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px; }
+
+  .developer {
+    font-size: 13px; }
+
+  .footlogo {
+    width: 130px;
+    background-size: contain; } }
 @media (min-width: 1280px) and (max-width: 1460px) {
   h2.head {
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 40px; }
 
-  #map .form .tel {
+  .map .form .tel {
     font-size: 33px; }
 
   .d1, .d2, .d3, .d4 {

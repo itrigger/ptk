@@ -245,7 +245,12 @@ h2.head{
   }
 }
 
-#map{
+#map_container{
+  height: 565px;
+  width: 100%;
+}
+
+.map{
   position: relative;
   height: 565px;
   .pos_a{
@@ -282,3 +287,6 @@ h2.head{
   }
 }
 
+.mobile{
+  display: none;
+}
