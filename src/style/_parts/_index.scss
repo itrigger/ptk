@@ -20,22 +20,24 @@
   }
 
   h1 {
-    font-size: 3.8vmax;
+    font-size: 64px;
+    font-family: $black;
     line-height: 1.2;
 
   }
 
   .slogan {
-    font-weight: 800;
-    margin-bottom: 45px;
-    font-size: 1.7vmax;
+    font-family: $bold;
+    font-size: 24px;
     line-height: 1.2;
   }
 
   p {
-    font-size: 1.7vmax;
-    line-height: 1.2;
-
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 25px;
+    border-left: 2px solid #A80010;
     span {
       display: block;
     }
@@ -54,8 +56,7 @@
 }
 
 .form{
-  border: 9px solid #A80010;
-  background: #F8F8F8;
+  background: $maincolor;
   color: #000;
   padding: 30px;
   width: 100%;

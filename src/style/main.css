@@ -324,18 +324,44 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../fonts/Gilroy-Bold.woff") format("woff"), url("../../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gilroy-Extrabold';
+  src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("../../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../../fonts/Gilroy-Extrabold.woff") format("woff"), url("../../fonts/Gilroy-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../fonts/Gilroy-Regular.woff") format("woff"), url("../../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../../fonts/Gilroy-Semibold.woff") format("woff"), url("../../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("../../fonts/Gilroy-Black.woff2") format("woff2"), url("../../fonts/Gilroy-Black.woff") format("woff"), url("../../fonts/Gilroy-Black.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
 html,
 body {
   margin: 0;
   height: 100%;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Gilroy-Regular";
+  color: #2B2B2B; }
 
 * {
   box-sizing: border-box; }
 
 a {
-  color: black;
+  color: #2B2B2B;
   text-decoration: none; }
 
 h1,
@@ -348,8 +374,8 @@ h2 {
 
 .container {
   margin: 0 auto;
-  padding: 0 30px;
-  max-width: 1440px;
+  padding: 0;
+  max-width: 1140px;
   width: 100%; }
 
 .row {
@@ -709,6 +735,9 @@ a:focus, a:active {
 .ai_s {
   align-items: flex-start; }
 
+.ai_e {
+  align-items: flex-end; }
+
 .ai_base {
   align-items: baseline; }
 
@@ -820,12 +849,12 @@ a:focus, a:active {
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-family: "Gilroy-Semibold";
   position: relative;
-  overflow: hidden;
   transition: 1s color;
-  white-space: nowrap; }
+  white-space: nowrap;
+  border-radius: 90px; }
   .btn > * {
     position: relative; }
   .btn:before {
@@ -950,13 +979,34 @@ table {
   height: 32px; }
 
 .header {
-  height: 100px;
-  color: #000; }
+  height: 100px; }
 
 .logo {
-  display: block;
-  width: 166px;
+  display: flex;
+  align-items: center;
+  width: 295px;
   height: 49px; }
+  .logo .logo-slogan {
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Gilroy-Semibold";
+    text-transform: uppercase; }
+  .logo span {
+    display: block; }
+
+.tt_tel {
+  display: flex;
+  flex-direction: column; }
+
+.tel_a {
+  font-size: 22px;
+  font-family: "Gilroy-Semibold";
+  margin-left: -30px;
+  margin-bottom: 5px; }
+
+.email_a {
+  text-decoration: underline; }
 
 .slider {
   background: url("../img/img.png") center center no-repeat;
@@ -977,16 +1027,19 @@ table {
     background: #000;
     opacity: 0.7; }
   .slider h1 {
-    font-size: 3.8vmax;
+    font-size: 64px;
+    font-family: "Gilroy-Black";
     line-height: 1.2; }
   .slider .slogan {
-    font-weight: 800;
-    margin-bottom: 45px;
-    font-size: 1.7vmax;
+    font-family: "Gilroy-Bold";
+    font-size: 24px;
     line-height: 1.2; }
   .slider p {
-    font-size: 1.7vmax;
-    line-height: 1.2; }
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 25px;
+    border-left: 2px solid #A80010; }
     .slider p span {
       display: block; }
 
@@ -998,8 +1051,7 @@ table {
   max-width: 100%; }
 
 .form {
-  border: 9px solid #A80010;
-  background: #F8F8F8;
+  background: #A80010;
   color: #000;
   padding: 30px;
   width: 100%; }

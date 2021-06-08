@@ -94,6 +94,10 @@ a:focus, a:active {
   align-items: flex-start;
 }
 
+.ai_e {
+  align-items: flex-end;
+}
+
 .ai_base {
   align-items: baseline;
 }
@@ -244,12 +248,12 @@ a:focus, a:active {
   align-items: center;
   justify-content: center;
   border: 2px solid #A80010;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-family: $semibold;
   position: relative;
-  overflow: hidden;
   transition: 1s color;
   white-space: nowrap;
+  border-radius: 90px;
   & > * {
     position: relative;
   }
@@ -264,7 +268,6 @@ a:focus, a:active {
     height: 76px;
     background-position: 0% 0%;
     transition: 1s all;
-
   }
 
   &:hover, &.active {

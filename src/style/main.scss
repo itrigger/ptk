@@ -1,4 +1,40 @@
 @import "_parts/_reset";
+@import "_parts/_fonts";
+
+$maincolor: #A80010;
+
+$bold: 'Gilroy-Bold';
+$extrabold: 'Gilroy-Extrabold';
+$semibold: 'Gilroy-Semibold';
+$regular: 'Gilroy-Regular';
+$black: 'Gilroy-Black';
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 400;
+  font-family: $regular;
+  color: #2B2B2B;
+}
+*{
+  box-sizing: border-box;
+}
+
+a {
+  color: #2B2B2B;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 56px;
+  span{
+    display: block;
+  }
+}
+
 @import "_parts/_grid";
 @import "_parts/_vars";
 @import "_parts/_utils";

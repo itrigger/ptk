@@ -1,10 +1,33 @@
 .header{
   height: 100px;
-  color: #000;
 }
 .logo{
-  display: block;
-  width: 166px;
+  display: flex;
+  align-items: center;
+  width: 295px;
   height: 49px;
+  .logo-slogan{
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: $semibold;
+    text-transform: uppercase;
+  }
+  span{
+    display: block;
+  }
+}
 
+.tt_tel{
+  display: flex;
+  flex-direction: column;
+}
+.tel_a{
+  font-size: 22px;
+  font-family: $semibold;
+  margin-left: -30px;
+  margin-bottom: 5px;
+}
+.email_a{
+  text-decoration: underline;
 }
