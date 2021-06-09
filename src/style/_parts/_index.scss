@@ -1,23 +1,10 @@
 .slider {
   background: url('../img/img.png') center center no-repeat;
   background-size: cover;
-  height: calc(100vh - 100px);
-  min-height: 515px;
-  max-height: 530px;
+  height: 658px;
+
   color: #fff;
   position: relative;
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: #000;
-    opacity: 0.7;
-  }
 
   h1 {
     font-size: 64px;
@@ -30,6 +17,7 @@
     font-family: $bold;
     font-size: 24px;
     line-height: 1.2;
+    margin-top: -130px;
   }
 
   p {
@@ -57,55 +45,71 @@
 
 .form{
   background: $maincolor;
-  color: #000;
-  padding: 30px;
-  width: 100%;
+  color: #FFFFFF;
+  padding: 45px 45px 70px;
+  width: calc(100% + 30px);
+  text-align: center;
+  margin-top: 25px;
+  margin-left: -30px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   .head{
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 32px;
+    font-family: $black;
     margin-bottom: 30px;
   }
   .form-control{
     width: 100%;
-    font-size: 18px;
-    font-weight: 500;
-    height: 50px;
+    font-size: 16px;
+    height: 57px;
     padding: 15px;
-    border-radius: 6px;
     margin-bottom: 20px;
     background: #fff;
     border: none;
   }
 }
 
+.confirm_text{
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 43px;
+  span{
+    display: block;
+  }
+}
 
 h2.head{
-  font-size: 46px;
-  font-weight: 800;
-  text-align: center;
-  color: #000;
+  font-size: 48px;
+  line-height: 1.4;
+  font-family: $black;
   margin-top: 60px;
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  .ico-left{
+    margin-right: 19px;
+  }
 }
 
 .service1{
+  position: relative;
   .img{
     margin-top: 20px;
   }
   .name{
     margin-top: 20px;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 24px;
+    font-family: $semibold;
   }
   .ico-c1{
     &:before{
       display: block;
       content: '';
       position: absolute;
-      left: 0;
+      left: 50%;
       top: 0;
-      width: 87px;
-      height: 59px;
+      transform: translateX(-50%);
+      width: 127px;
+      height: 143px;
       background: url('../img/main-ico-1.svg') 0 0 no-repeat;
       background-size: contain;
     }
@@ -115,10 +119,11 @@ h2.head{
       display: block;
       content: '';
       position: absolute;
-      left: -20px;
-      top: -10px;
-      width: 89px;
-      height: 83px;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 125px;
+      height: 124px;
       background: url('../img/main-ico-2.svg') 0 0 no-repeat;
       background-size: contain;
     }
@@ -128,10 +133,11 @@ h2.head{
       display: block;
       content: '';
       position: absolute;
-      left: 0;
-      top: -10px;
-      width: 78px;
-      height: 78px;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 123px;
+      height: 116px;
       background: url('../img/main-ico-3.svg') 0 0 no-repeat;
       background-size: contain;
     }
@@ -141,121 +147,124 @@ h2.head{
       display: block;
       content: '';
       position: absolute;
-      left: -40px;
+      left: 50%;
       top: 0;
-      width: 108px;
-      height: 65px;
+      transform: translateX(-50%);
+      width: 126px;
+      height: 114px;
       background: url('../img/main-ico-4.svg') 0 0 no-repeat;
       background-size: contain;
     }
   }
   .icos{
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 600;
-    margin-top: 100px;
-    padding-left: 110px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 20px;
     position: relative;
+    padding-top: 145px;
+    text-align: center;
     span{
       display: block;
     }
   }
-}
-
-.vagon{
-  position: relative;
-  &:after{
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: -230px;
-    right: 0;
-    width: 1034px;
-    height: 623px;
-    background: url('../img/main-bg-1.svg') 0 0 no-repeat;
-    z-index: -1;
+  &.s1-1{
+    padding-bottom: 50px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: -50px;
+      width: 449px;
+      height: 767px;
+      background: url('../img/bg_deks.svg') 0 0 no-repeat;
+      bottom: -430px;
+    }
   }
+  &.s1-2{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background: #fff;
+    clip-path: polygon(0 18%, 68% 0, 100% 14%, 100% 79%, 31% 97%, 0 81%);
+  }
+}
+strong{
+  font-family: $bold;
+}
+.vagon{
 }
 
 .buy-sale{
-  margin-top: 50px;
+  margin-top: -150px;
 }
 
 .red-bg{
   background: url('../img/red-bg.jpg') 0 0 repeat;
-  height: 553px;
   padding-top: 100px;
+  padding-bottom: 105px;
+  color: #fff;
+  .ico-arr{
+    background: url("../img/arr-white.svg") 0 0 no-repeat;
+  }
   img{
     margin-bottom: 40px;
   }
   .text{
     font-size: 18px;
+    line-height: 1.5;
   }
 }
 
-.d1{
-  background: url('../img/1.svg') 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0;
-}
-.d2{
-  background: url('../img/2.svg') 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0;
-}
-.d3{
-  background: url('../img/3.svg') 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0;
-}
-.d4{
-  background: url('../img/4.svg') 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0;
+.d1, .d2, .d3, .d4{
+  background: #fff;
+  color: #2B2B2B;
+  padding: 30px;
 }
 
 .about{
-  background: url('../img/about-bg.jpg') center top no-repeat;
-  height: 530px;
-  color: #fff;
+background: #fff;
+
+
   .check{
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
     margin-bottom: 55px;
-    padding-left: 100px;
+    padding-left: 20px;
     position: relative;
     &:before{
       content: '';
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 10px;
+      height: 10px;
       position: absolute;
-      left: 15px;
-      top: 10px;
-      background: url('../img/ico-check.svg') 0 0 no-repeat;
+      left: 0;
+      top: 5px;
+      background: $maincolor;
     }
   }
+}
+
+.triangle_layer{
+  background: #fff;
+  height: 140px;
+  clip-path: polygon(0 0, 100% 0, 30% 100%);
+  margin-bottom: -140px;
+  position: relative;
+  z-index: 101;
+  pointer-events: none;
 }
 
 #map_container{
   height: 565px;
   width: 100%;
+  z-index: 100;
 }
 
 .map{
   position: relative;
   height: 565px;
   .pos_a{
-    z-index: 99;
+    z-index: 102;
     left: 50%;
     transform: translateX(-50%);
   }

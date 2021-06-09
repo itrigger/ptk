@@ -355,7 +355,8 @@ body {
   height: 100%;
   font-weight: 400;
   font-family: "Gilroy-Regular";
-  color: #2B2B2B; }
+  color: #2B2B2B;
+  background: #EDEDED; }
 
 * {
   box-sizing: border-box; }
@@ -911,10 +912,10 @@ a:focus, a:active {
         display: none; }
 
 input[type=submit].btn {
-  background-image: url("../img/arr-w.svg");
-  background-position: 90% center;
-  background-repeat: no-repeat;
-  padding-right: 47px; }
+  border: 1px solid #fff;
+  height: 70px;
+  margin-top: 30px;
+  width: 100%; }
 
 @keyframes btnBg {
   0% {
@@ -978,8 +979,14 @@ table {
   width: 31px;
   height: 32px; }
 
+.ico-arr {
+  width: 38px;
+  height: 52px;
+  background: url("../img/arr-red.svg") 0 0 no-repeat; }
+
 .header {
-  height: 100px; }
+  height: 100px;
+  background: #fff; }
 
 .logo {
   display: flex;
@@ -1011,21 +1018,9 @@ table {
 .slider {
   background: url("../img/img.png") center center no-repeat;
   background-size: cover;
-  height: calc(100vh - 100px);
-  min-height: 515px;
-  max-height: 530px;
+  height: 658px;
   color: #fff;
   position: relative; }
-  .slider:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: #000;
-    opacity: 0.7; }
   .slider h1 {
     font-size: 64px;
     font-family: "Gilroy-Black";
@@ -1033,7 +1028,8 @@ table {
   .slider .slogan {
     font-family: "Gilroy-Bold";
     font-size: 24px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin-top: -130px; }
   .slider p {
     margin-top: 30px;
     font-size: 20px;
@@ -1052,171 +1048,184 @@ table {
 
 .form {
   background: #A80010;
-  color: #000;
-  padding: 30px;
-  width: 100%; }
+  color: #FFFFFF;
+  padding: 45px 45px 70px;
+  width: calc(100% + 30px);
+  text-align: center;
+  margin-top: 25px;
+  margin-left: -30px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
   .form .head {
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 32px;
+    font-family: "Gilroy-Black";
     margin-bottom: 30px; }
   .form .form-control {
     width: 100%;
-    font-size: 18px;
-    font-weight: 500;
-    height: 50px;
+    font-size: 16px;
+    height: 57px;
     padding: 15px;
-    border-radius: 6px;
     margin-bottom: 20px;
     background: #fff;
     border: none; }
 
-h2.head {
-  font-size: 46px;
-  font-weight: 800;
-  text-align: center;
-  color: #000;
-  margin-top: 60px;
-  margin-bottom: 60px; }
-
-.service1 .img {
-  margin-top: 20px; }
-.service1 .name {
-  margin-top: 20px;
-  font-size: 25px;
-  font-weight: 600; }
-.service1 .ico-c1:before {
-  display: block;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 87px;
-  height: 59px;
-  background: url("../img/main-ico-1.svg") 0 0 no-repeat;
-  background-size: contain; }
-.service1 .ico-c2:before {
-  display: block;
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: -10px;
-  width: 89px;
-  height: 83px;
-  background: url("../img/main-ico-2.svg") 0 0 no-repeat;
-  background-size: contain; }
-.service1 .ico-c3:before {
-  display: block;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -10px;
-  width: 78px;
-  height: 78px;
-  background: url("../img/main-ico-3.svg") 0 0 no-repeat;
-  background-size: contain; }
-.service1 .ico-c4:before {
-  display: block;
-  content: '';
-  position: absolute;
-  left: -40px;
-  top: 0;
-  width: 108px;
-  height: 65px;
-  background: url("../img/main-ico-4.svg") 0 0 no-repeat;
-  background-size: contain; }
-.service1 .icos {
-  font-size: 20px;
+.confirm_text {
+  font-size: 15px;
   line-height: 1.2;
-  font-weight: 600;
-  margin-top: 100px;
-  padding-left: 110px;
-  position: relative; }
-  .service1 .icos span {
+  margin-top: 43px; }
+  .confirm_text span {
     display: block; }
 
-.vagon {
+h2.head {
+  font-size: 48px;
+  line-height: 1.4;
+  font-family: "Gilroy-Black";
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center; }
+  h2.head .ico-left {
+    margin-right: 19px; }
+
+.service1 {
   position: relative; }
-  .vagon:after {
+  .service1 .img {
+    margin-top: 20px; }
+  .service1 .name {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "Gilroy-Semibold"; }
+  .service1 .ico-c1:before {
     display: block;
     content: '';
     position: absolute;
-    bottom: -230px;
-    right: 0;
-    width: 1034px;
-    height: 623px;
-    background: url("../img/main-bg-1.svg") 0 0 no-repeat;
-    z-index: -1; }
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 127px;
+    height: 143px;
+    background: url("../img/main-ico-1.svg") 0 0 no-repeat;
+    background-size: contain; }
+  .service1 .ico-c2:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 124px;
+    background: url("../img/main-ico-2.svg") 0 0 no-repeat;
+    background-size: contain; }
+  .service1 .ico-c3:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 123px;
+    height: 116px;
+    background: url("../img/main-ico-3.svg") 0 0 no-repeat;
+    background-size: contain; }
+  .service1 .ico-c4:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 126px;
+    height: 114px;
+    background: url("../img/main-ico-4.svg") 0 0 no-repeat;
+    background-size: contain; }
+  .service1 .icos {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 20px;
+    position: relative;
+    padding-top: 145px;
+    text-align: center; }
+    .service1 .icos span {
+      display: block; }
+  .service1.s1-1 {
+    padding-bottom: 50px; }
+    .service1.s1-1:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -50px;
+      width: 449px;
+      height: 767px;
+      background: url("../img/bg_deks.svg") 0 0 no-repeat;
+      bottom: -430px; }
+  .service1.s1-2 {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background: #fff;
+    clip-path: polygon(0 18%, 68% 0, 100% 14%, 100% 79%, 31% 97%, 0 81%); }
+
+strong {
+  font-family: "Gilroy-Bold"; }
 
 .buy-sale {
-  margin-top: 50px; }
+  margin-top: -150px; }
 
 .red-bg {
   background: url("../img/red-bg.jpg") 0 0 repeat;
-  height: 553px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 105px;
+  color: #fff; }
+  .red-bg .ico-arr {
+    background: url("../img/arr-white.svg") 0 0 no-repeat; }
   .red-bg img {
     margin-bottom: 40px; }
   .red-bg .text {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 1.5; }
 
-.d1 {
-  background: url("../img/1.svg") 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0; }
-
-.d2 {
-  background: url("../img/2.svg") 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0; }
-
-.d3 {
-  background: url("../img/3.svg") 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0; }
-
-.d4 {
-  background: url("../img/4.svg") 0 0 no-repeat;
-  width: 295px;
-  height: 345px;
-  background-size: contain;
-  padding: 45px 28px 0; }
+.d1, .d2, .d3, .d4 {
+  background: #fff;
+  color: #2B2B2B;
+  padding: 30px; }
 
 .about {
-  background: url("../img/about-bg.jpg") center top no-repeat;
-  height: 530px;
-  color: #fff; }
+  background: #fff; }
   .about .check {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
     margin-bottom: 55px;
-    padding-left: 100px;
+    padding-left: 20px;
     position: relative; }
     .about .check:before {
       content: '';
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 10px;
+      height: 10px;
       position: absolute;
-      left: 15px;
-      top: 10px;
-      background: url("../img/ico-check.svg") 0 0 no-repeat; }
+      left: 0;
+      top: 5px;
+      background: #A80010; }
+
+.triangle_layer {
+  background: #fff;
+  height: 140px;
+  clip-path: polygon(0 0, 100% 0, 30% 100%);
+  margin-bottom: -140px;
+  position: relative;
+  z-index: 101;
+  pointer-events: none; }
 
 #map_container {
   height: 565px;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
 
 .map {
   position: relative;
   height: 565px; }
   .map .pos_a {
-    z-index: 99;
+    z-index: 102;
     left: 50%;
     transform: translateX(-50%); }
   .map .form {

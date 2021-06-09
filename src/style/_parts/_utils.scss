@@ -342,10 +342,10 @@ a:focus, a:active {
 }
 
 input[type=submit].btn{
-  background-image: url('../img/arr-w.svg');
-  background-position: 90% center;
-  background-repeat: no-repeat;
-  padding-right: 47px;
+  border: 1px solid #fff;
+  height: 70px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 @keyframes btnBg {
