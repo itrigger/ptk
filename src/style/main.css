@@ -914,7 +914,7 @@ a:focus, a:active {
 input[type=submit].btn {
   border: 1px solid #fff;
   height: 70px;
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%; }
 
 @keyframes btnBg {
@@ -1052,7 +1052,7 @@ table {
   padding: 45px 45px 70px;
   width: calc(100% + 30px);
   text-align: center;
-  margin-top: 25px;
+  margin-top: 55px;
   margin-left: -30px;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
   .form .head {
@@ -1071,7 +1071,7 @@ table {
 .confirm_text {
   font-size: 15px;
   line-height: 1.2;
-  margin-top: 43px; }
+  margin-top: 35px; }
   .confirm_text span {
     display: block; }
 
@@ -1217,36 +1217,40 @@ strong {
   pointer-events: none; }
 
 #map_container {
-  height: 565px;
+  height: 726px;
   width: 100%;
   z-index: 100; }
 
 .map {
   position: relative;
-  height: 565px; }
+  height: 726px; }
   .map .pos_a {
     z-index: 102;
     left: 50%;
     transform: translateX(-50%); }
   .map .form {
-    margin-top: 35px; }
+    margin-top: 0;
+    padding-top: 70px;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%); }
   .map .container {
     pointer-events: none; }
   .map .form {
-    pointer-events: all; }
+    pointer-events: all;
+    color: #fff; }
+    .map .form a {
+      color: inherit; }
     .map .form .tel {
-      font-size: 40px;
-      font-weight: 800;
+      font-size: 32px;
+      font-family: "Gilroy-Black";
       margin-bottom: 20px;
       display: inline-block;
       text-align: center; }
     .map .form .address {
-      font-size: 18px;
-      font-weight: 800;
+      font-size: 17px;
+      font-family: "Gilroy-Regular";
       margin-bottom: 25px; }
     .map .form .text {
-      font-weight: 800;
-      color: #4D4D4D;
+      font-family: "Gilroy-Bold";
       font-size: 18px;
       margin-bottom: 15px; }
 

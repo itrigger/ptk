@@ -196,7 +196,7 @@
                 <div class="col-4 m-col-12 s-col-12 xs-col-12">
                     <div class="form">
                         <div class="ta-c">
-                            <a href="tel:" class="tel"><span class="ico ico-left ico-tel"></span>+ 7 (495) 780-71-48</a>
+                            <a href="tel:" class="tel">+7 (495) 780-71-48</a>
                             <div class="address">г. Москва, Басманный переулок, 6А</div>
                             <div class="text">Напишите ваше данные и мы
                                 <span>свяжемся с вами в ближайшее время</span></div>
@@ -212,7 +212,11 @@
                                 <input type="tel" class="form-control" placeholder="Телефон"/>
                             </div>
                             <div>
-                                <input type="submit" value="Отправить" class="btn"/>
+                                <input type="submit" value="Отправить заявку" class="btn"/>
+                            </div>
+                            <div class="confirm_text">
+                                Нажимая на кнопку вы даете согласие
+                                <span>на обработку персональных данных</span>
                             </div>
                         </form>
                     </div>
@@ -245,8 +249,8 @@
                 var myPlacemark = new ymaps.Placemark([sitesContacts[i][1], sitesContacts[i][2]], {}, {
                     iconLayout: 'default#image',
                     iconImageHref: 'http://localhost:3000/img/map.svg',
-                    iconImageSize: [66, 50],
-                    iconImageOffset: [-3, -42]
+                    iconImageSize: [118, 158],
+                    iconImageOffset: [-69, -158]
                 });
 
                 myMap.geoObjects.add(myPlacemark);
