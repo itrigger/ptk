@@ -21,3 +21,16 @@ footer{
 .developer{
   font-size: 15px;
 }
+.foot_address{
+  margin-left: 20px;
+  font-size: 17px;
+  span{
+    display: block;
+  }
+}
+.foot_tel{
+  font-size: 22px;
+  font-family: $semibold;
+  margin-left: -20px;
+  margin-right: -20px;
+}

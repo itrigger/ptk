@@ -859,7 +859,6 @@ a:focus, a:active {
   .btn > * {
     position: relative; }
   .btn:before {
-    content: '';
     display: block;
     position: absolute;
     top: 76px;
@@ -977,7 +976,7 @@ table {
 .ico-tel {
   background: url("../img/ico-tel.svg") 0 0 no-repeat;
   width: 31px;
-  height: 32px; }
+  height: 31px; }
 
 .ico-arr {
   width: 38px;
@@ -1162,6 +1161,7 @@ h2.head {
     padding-top: 100px;
     padding-bottom: 150px;
     background: #fff;
+    transition: .3s all;
     clip-path: polygon(0 18%, 68% 0, 100% 14%, 100% 79%, 31% 97%, 0 81%); }
 
 strong {
@@ -1319,6 +1319,18 @@ footer {
 .developer {
   font-size: 15px; }
 
+.foot_address {
+  margin-left: 20px;
+  font-size: 17px; }
+  .foot_address span {
+    display: block; }
+
+.foot_tel {
+  font-size: 22px;
+  font-family: "Gilroy-Semibold";
+  margin-left: -20px;
+  margin-right: -20px; }
+
 @media (max-width: 768px) {
   .mobile {
     display: inherit; }
@@ -1333,14 +1345,17 @@ footer {
     height: 70px; }
 
   .slider {
-    height: calc(100vh - 70px);
+    height: 530px;
     min-height: auto;
     max-height: none; }
 
   .logo {
-    width: 116px; }
+    width: 175px; }
     .logo svg {
       max-width: 100%; }
+    .logo .logo-slogan {
+      font-size: 9px;
+      margin-left: 15px; }
 
   .tt_wt,
   .tt_mail,
@@ -1351,11 +1366,18 @@ footer {
   .tt_form {
     display: none; }
 
-  #slideform {
-    display: none; }
+  .slider {
+    height: auto;
+    background-position: center top;
+    background-size: auto 576px; }
+    .slider .col-8 {
+      height: 576px; }
+    .slider .slogan {
+      margin-top: -170px;
+      font-size: 16px; }
 
   .slider h1 {
-    font-size: 6vmax; }
+    font-size: 42px; }
 
   .slider .btn {
     margin-top: 20px;
@@ -1363,11 +1385,20 @@ footer {
     padding-left: 0;
     padding-right: 0; }
 
-  .slider .slogan {
-    font-size: 2.7vmax; }
-
   .slider p {
-    font-size: 2.7vmax; }
+    font-size: 16px;
+    padding-left: 15px; }
+
+  .service1.s1-2 {
+    transition: 0.3s all;
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%); }
+
+  .form {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -195px;
+    padding: 50px 20px 20px;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%); }
 
   .red-bg {
     height: auto;
@@ -1487,9 +1518,23 @@ footer {
     font-size: 15px; }
 
   .form .form-control {
-    height: 45px;
+    height: 44px;
     font-size: 15px;
-    padding: 0 15px; }
+    padding: 0 15px;
+    margin-bottom: 10px; }
+
+  input[type=submit].btn {
+    height: 54px; }
+
+  .confirm_text {
+    font-size: 13px;
+    margin-top: 15px; }
+
+  .confirm_text span {
+    display: inline; }
+
+  .service1.s1-1:before {
+    display: none; }
 
   .footer {
     padding-top: 30px;

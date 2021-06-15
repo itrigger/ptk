@@ -13,14 +13,18 @@
     height: 70px;
   }
   .slider{
-    height: calc(100vh - 70px);
+    height: 530px;
     min-height: auto;
     max-height: none;
   }
   .logo{
-    width: 116px;
+    width: 175px;
     svg{
       max-width: 100%;
+    }
+    .logo-slogan{
+      font-size: 9px;
+      margin-left: 15px;
     }
   }
   .tt_wt,
@@ -37,10 +41,22 @@
 
 
   #slideform{
-    display: none;
+
+  }
+  .slider{
+    height: auto;
+    background-position: center top;
+    background-size: auto 576px;
+    .col-8{
+      height: 576px;
+    }
+    .slogan{
+      margin-top: -170px;
+      font-size: 16px;
+    }
   }
   .slider h1{
-    font-size: 6vmax;
+    font-size: 42px;
   }
   .slider .btn{
     margin-top: 20px;
@@ -48,11 +64,23 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .slider .slogan{
-    font-size: 2.7vmax;
-  }
+
   .slider p{
-    font-size: 2.7vmax;
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .service1.s1-2{
+    transition: 0.3s all;
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .form{
+    width: 100%;
+    margin-left: 0;
+    margin-top: -195px;
+    padding: 50px 20px 20px;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
   }
 
   .red-bg{
@@ -178,9 +206,24 @@
     font-size: 15px;
   }
   .form .form-control{
-    height: 45px;
+    height: 44px;
     font-size: 15px;
     padding: 0 15px;
+    margin-bottom: 10px;
+  }
+  input[type=submit].btn{
+    height: 54px;
+  }
+  .confirm_text{
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .confirm_text span{
+    display: inline;
+  }
+
+  .service1.s1-1:before{
+    display: none;
   }
 
   .footer{
