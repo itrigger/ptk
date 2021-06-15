@@ -1391,7 +1391,9 @@ footer {
 
   .service1.s1-2 {
     transition: 0.3s all;
-    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%); }
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+    padding-bottom: 60px;
+    padding-top: 50px; }
 
   .form {
     width: 100%;
@@ -1407,15 +1409,20 @@ footer {
 
   .red-bg img {
     max-width: 100px;
-    height: auto; }
+    height: auto;
+    margin-bottom: 20px; }
 
   .red-bg .text {
     font-size: 16px; }
+    .red-bg .text span {
+      display: block; }
 
   .d1, .d2, .d3, .d4 {
-    max-width: 80%;
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
     margin: 0 auto;
-    height: 314px; }
+    height: 232px; }
 
   h2.head {
     font-size: 24px;
@@ -1433,35 +1440,36 @@ footer {
     font-size: 16px;
     padding-left: 20px;
     padding-right: 20px;
-    text-align: center; }
+    text-align: left;
+    margin-top: 30px; }
 
   .service1 .ico-c1:before {
-    width: 67px;
-    height: 45px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -50px; }
+    width: 76px;
+    height: 89px;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
 
   .service1 .ico-c2:before {
-    width: 65px;
-    height: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -70px; }
+    width: 76px;
+    height: 89px;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
 
   .service1 .ico-c3:before {
-    width: 65px;
-    height: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -70px; }
+    width: 76px;
+    height: 89px;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
 
   .service1 .ico-c4:before {
-    width: 88px;
-    height: 53px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -70px; }
+    width: 76px;
+    height: 89px;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
 
   .vagon:after {
     background-size: contain;
@@ -1469,7 +1477,7 @@ footer {
     height: 364px; }
 
   .buy-sale {
-    margin-top: 30px; }
+    margin-top: -50px; }
 
   .form .head {
     font-size: 24px; }
@@ -1478,14 +1486,15 @@ footer {
     height: auto; }
 
   .about .check {
-    font-size: 14px;
-    padding-left: 50px;
+    font-size: 16px;
+    line-height: 1.4;
+    padding-left: 35px;
     margin-bottom: 35px; }
 
   .about .check:before {
     background-size: contain;
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     left: 10px; }
 
   .map {
@@ -1533,8 +1542,26 @@ footer {
   .confirm_text span {
     display: inline; }
 
+  .service1.s1-1 {
+    margin-top: 25px; }
+
   .service1.s1-1:before {
     display: none; }
+
+  h2.head {
+    margin-right: auto;
+    margin-left: auto; }
+
+  .service1 .icos {
+    padding: 0 0 0 100px; }
+
+  .ico-arr {
+    width: 24px;
+    height: 33px;
+    background-size: contain; }
+
+  .red-bg .ico-arr {
+    background-size: contain; }
 
   .footer {
     padding-top: 30px;
