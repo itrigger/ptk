@@ -5,14 +5,14 @@
 <div class="slider">
     <div class="container h_100 pos_r">
         <div class="row h_100">
-            <div class="col-8 m-col-12 s-col-12 xs-col-12 d_f f_c jc_c">
+            <div class="col-8 m-col-7 s-col-12 xs-col-12 d_f f_c jc_c">
                 <div class="slogan split">Быстро, качественно и надежно!</div>
                 <h1 class="split">Вагонный парк «ПТК»</h1>
                 <p class="split">Аренда и продажи железнодорожного
                     <span>подвижного состава по России, СНГ и Европе</span></p>
 
             </div>
-            <div class="col-4 m-col-12 s-col-12 xs-col-12 d_f ai_c">
+            <div class="col-4 m-col-5 s-col-12 xs-col-12 d_f ai_c">
                 <div class="form" id="slideform">
                     <div class="head">Оставить заявку</div>
                     <form action="">
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 m-col-6 s-col-12 xs-col-12 | d1">
+                <div class="col-3 m-col-3 s-col-12 xs-col-12 | d1">
                     <div class="ta-c">
                         <img src="/img/sec-ico-1.png" width="101" height="101" alt="">
                         <div class="text">
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 m-col-6 s-col-12 xs-col-12 | d1">
+                <div class="col-3 m-col-3 s-col-12 xs-col-12 | d1">
                     <div class="ta-c">
                         <img src="/img/sec-ico-2.png" alt="">
                         <div class="text">
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 m-col-6 s-col-12 xs-col-12 | d1">
+                <div class="col-3 m-col-3 s-col-12 xs-col-12 | d1">
                     <div class="ta-c">
                         <img src="/img/sec-ico-3.png" alt="">
                         <div class="text">
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 m-col-6 s-col-12 xs-col-12 | d1">
+                <div class="col-3 m-col-3 s-col-12 xs-col-12 | d1">
                     <div class="ta-c">
                         <img src="/img/sec-ico-4.png" alt="">
                         <div class="text">
@@ -212,8 +212,8 @@
         <div class="triangle_layer"></div>
         <div class="container pos_a">
             <div class="row">
-                <div class="col-8"></div>
-                <div class="col-4 m-col-12 s-col-12 xs-col-12">
+                <div class="col-8 m-col-6"></div>
+                <div class="col-4 m-col-6 s-col-12 xs-col-12">
                     <div class="form">
                         <div class="ta-c">
                             <a href="tel:" class="tel">+7 (495) 780-71-48</a>
@@ -250,6 +250,26 @@
 </script>
 <script type="text/javascript">
 
+    var mIconImageSize,
+        mIconImageOffset,
+        mCenter;
+
+    var w = window.innerWidth;
+
+    if(w <= 768){
+        mIconImageSize = [71,95];
+        mIconImageOffset = [-35,-95];
+        mCenter = [50.402771, 30.636621];
+    } else if (w > 768 && w < 1280) {
+        mIconImageSize = [71,95];
+        mIconImageOffset = [-35,-95];
+        mCenter = [50.402771, 30.650621];
+    } else {
+        mIconImageSize = [118,158];
+        mIconImageOffset = [-69,-158];
+        mCenter = [50.402771, 30.636621];
+    }
+
     var sitesContacts = [
         ['Киев', 50.402771, 30.636621, 1, '<div class="pic"><img alt="" src="/wp-content/themes/sxematika/assets/img/map_legend_contact.jpg"></div><div class="desc"><div class="title">Киев, улица Драгоманова, 27</div><div class="tel"><a href="tel:89854708800">8 (985) 470 88 00</a></div><div class="email"><a href="mailto:kiev@sxematika.com.ua">kiev@sxematika.com.ua</a></div></div>', '<div class="desc"><div class="title">Киев, улица Драгоманова, 27</div></div>', ''],
     ];
@@ -258,7 +278,7 @@
 
 
         var myMap = new ymaps.Map("map_container", {
-            center: [50.402771, 30.636621],
+            center: mCenter,
             zoom: 14,
             controls: ['zoomControl', 'fullscreenControl']
         });
@@ -269,8 +289,8 @@
                 var myPlacemark = new ymaps.Placemark([sitesContacts[i][1], sitesContacts[i][2]], {}, {
                     iconLayout: 'default#image',
                     iconImageHref: 'http://localhost:3000/img/map.svg',
-                    iconImageSize: [118, 158],
-                    iconImageOffset: [-69, -158]
+                    iconImageSize: mIconImageSize,
+                    iconImageOffset: mIconImageOffset
                 });
 
                 myMap.geoObjects.add(myPlacemark);

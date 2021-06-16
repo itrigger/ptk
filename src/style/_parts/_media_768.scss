@@ -236,11 +236,11 @@
     position: relative;
     margin-bottom: 0;
     padding-bottom: 30px;
-    margin-top: -80px;
+    margin-top: 0;
     background: #fff;
   }
   .map .form{
-    margin-top: 0;
+    margin-top: -70px;
   }
   .map .form .tel{
     font-size: 20px;
@@ -314,7 +314,12 @@
         font-size: 12px;
       }
     }
-
+    .jc_sb{
+      justify-content: center;
+      a{
+        margin: 0 10px;
+      }
+    }
   }
   footer .head{
     margin-bottom: 10px;
@@ -322,162 +327,22 @@
   .developer{
     font-size: 13px;
   }
-
-
-}
-
-@media (min-width: 769px) and (max-width: 1279px){
-  .mobile{
-    display: inherit;
+  .foot_address {
+    margin-left: 0;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
-  .desktop{
-    display: none;
-  }
-  .logo{
-    width: 116px;
-    svg{
-      max-width: 100%;
-    }
-  }
-  .tt_wt,
-  .tt_mail,
-  .tt_tel{
-    font-size: 0;
-  }
-  .tt_wt{
-    margin-left: auto;
-  }
-
-
-
-  #slideform{
-    display: none;
-  }
-  .slider h1{
-    font-size: 6vmax;
-  }
-  .slider .btn{
-    margin-top: 20px;
-    width: 200px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .slider .slogan{
-    font-size: 2.7vmax;
-  }
-  .slider p{
-    font-size: 2.7vmax;
-  }
-  .slider{
-    min-height: 295px;
-    max-height: 350px;
-  }
-
-  .red-bg{
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .red-bg img{
-    max-width: 100px;
-    height: auto;
-  }
-
-  .d1, .d2, .d3, .d4{
-    max-width: 80%;
-    margin: 0 auto;
-    height: 314px;
-  }
-  h2.head{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .span-10-c{
-    grid-column: -1 / 1;
-  }
-  .service1 .name{
-    font-size: 20px;
-  }
-  .service1 .icos{
-    font-size: 16px;
-    padding-left: 80px;
-    padding-right: 25px;
-  }
-  .service1 .ico-c1:before{
-    width: 67px;
-    height: 45px;
-  }
-  .service1 .ico-c2:before{
-    width: 65px;
-    height: 60px;
-    left: 0;
-    top: 0;
-  }
-  .service1 .ico-c3:before{
-    width: 65px;
-    height: 60px;
-    top: 0;
-  }
-  .service1 .ico-c4:before{
-    width: 88px;
-    height: 53px;
-    left: -20px;
-  }
-  .vagon:after{
-    background-size: contain;
-    width: 504px;
-    height: 364px;
-  }
-  .buy-sale{
-    margin-top: 30px;
-  }
-
-
-  .about{
-    height: auto;
-  }
-  .about .check{
-    font-size: 16px;
-    padding-left: 70px;
-  }
-  .about .check:before{
-    background-size: contain;
-    width: 35px;
-    height: 35px;
-  }
-
-  .map {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-  }
-  #map_container{
-    position: relative;
-    height: 350px;
-  }
-  .map .container{
-    position: relative;
-    margin-bottom: 40px;
-  }
-  .map .form{
-    margin-top: 0;
-  }
-
-  .footer{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 14px;
-  }
-  .developer{
-    font-size: 13px;
-  }
-  .footlogo{
-    width: 130px;
-    background-size: contain;
+  .foot_tel {
+    font-size: 22px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
 }
+
 
 @media (min-width: 1280px) and (max-width: 1460px){
   h2.head{

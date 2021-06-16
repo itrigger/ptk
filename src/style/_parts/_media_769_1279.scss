@@ -1,0 +1,231 @@
+
+@media (min-width: 769px) and (max-width: 1279px){
+  .mobile{
+    display: none;
+  }
+  .desktop{
+    display: inherit;
+  }
+  .logo{
+    width: 236px;
+    svg{
+      max-width: 100%;
+    }
+  }
+  .logo .logo-slogan{
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+.tt_form{
+  .btn{
+    padding: 10px 22px;
+  }
+}
+
+
+  .slider{
+    .form{
+      margin-left: 0;
+      width: 100%;
+      padding: 20px 20px 50px;
+    }
+  }
+
+  .slider h1{
+    font-size: 50px;
+  }
+  .slider .btn{
+    margin-top: 20px;
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .slider p{
+    font-size: 16px;
+    padding-left: 15px;
+  }
+  .slider{
+    min-height: 420px;
+    max-height: 480px;
+  }
+  .slider .slogan{
+    margin-top: -60px;
+  }
+
+  .form .form-control{
+    height: 45px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+  .form .head{
+    font-size: 29px;
+  }
+
+  input[type=submit].btn{
+    height: 50px;
+  }
+  .confirm_text{
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .service1.s1-2{
+    transition: 0.3s all;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+
+
+
+
+  .red-bg{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .red-bg img{
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .red-bg .text{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .d1, .d2, .d3, .d4{
+    max-width: 100%;
+    margin: 0;
+    height: 224px;
+    padding: 15px;
+  }
+
+  h2.head{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .span-10-c{
+    grid-column: -1 / 1;
+  }
+  .span-10-c{
+    grid-column: -1 / 1;
+  }
+  .service1 .name{
+    font-size: 20px;
+  }
+  .service1 .icos{
+    font-size: 16px;
+    padding-left: 0;
+    padding-top: 115px;
+    padding-right: 20px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .service1 .ico-c1:before{
+    width: 96px;
+    height: 93px;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+  }
+  .service1 .ico-c2:before{
+    width: 96px;
+    height: 93px;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+  }
+  .service1 .ico-c3:before{
+    width: 96px;
+    height: 93px;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+  }
+  .service1 .ico-c4:before{
+    width: 96px;
+    height: 93px;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+  }
+  .vagon:after{
+    background-size: contain;
+    width: 504px;
+    height: 364px;
+  }
+  .buy-sale{
+    margin-top: -50px;
+  }
+
+
+  .about{
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .about .check{
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .about .check:before{
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+  }
+
+/*  .map {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }*/
+  .triangle_layer{
+    clip-path: polygon(0 0, 100% 0, 30% 100%);
+    height: 40px;
+  }
+  .map{
+    height: 546px;
+    .form{
+      margin-top: -30px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  #map_container{
+    height: 576px;
+  }
+
+/*  #map_container{
+    position: relative;
+    height: 350px;
+  }
+  .map .container{
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    margin-top: 0;
+    background: #fff;
+  }
+  .map .form{
+    margin-top: -70px;
+  }*/
+
+
+  .footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+  .developer{
+    font-size: 13px;
+  }
+  .footlogo{
+    width: 130px;
+    background-size: contain;
+  }
+
+}
