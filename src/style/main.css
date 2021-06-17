@@ -937,8 +937,8 @@ sup {
   justify-content: space-between; }
 
 .fancybox-content.popup {
-  background: #493648;
-  padding: 35px;
+  background: transparent;
+  padding: 0;
   max-width: 640px;
   color: #fff; }
   .fancybox-content.popup h2 {
@@ -947,6 +947,9 @@ sup {
     font-weight: 800;
     margin-bottom: 25px;
     padding-right: 50px; }
+  .fancybox-content.popup .form {
+    width: 100%;
+    margin: 0; }
 
 table {
   max-width: 600px; }
@@ -1068,7 +1071,8 @@ table {
     padding: 15px;
     margin-bottom: 20px;
     background: #fff;
-    border: none; }
+    border: none;
+    font-family: "Gilroy-Regular"; }
 
 .confirm_text {
   font-size: 15px;
@@ -1299,7 +1303,7 @@ strong {
   .alert.success {
     background: #2ecc71; }
   .alert.error {
-    background: red; }
+    background: #A80010; }
   .alert a {
     color: #fff;
     display: inline-block;

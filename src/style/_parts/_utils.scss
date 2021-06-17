@@ -379,8 +379,8 @@ sup {
 
 
 .fancybox-content.popup {
-  background: #493648;
-  padding: 35px;
+  background: transparent;
+  padding: 0;
   max-width: 640px;
   color: #fff;
   h2{
@@ -389,6 +389,10 @@ sup {
     font-weight: 800;
     margin-bottom: 25px;
     padding-right: 50px;
+  }
+  .form{
+    width: 100%;
+    margin: 0;
   }
 }
 
