@@ -23,6 +23,12 @@
   }
 }
 
+  .tt_form{
+    justify-content: flex-end;
+    .btn{
+      margin-left: 0;
+    }
+  }
 
   .slider{
     .form{
@@ -223,9 +229,7 @@
       display: none;
     }
     .foot-btns{
-      .btn{
-        display: none;
-      }
+
     }
   }
   .foot_tel{

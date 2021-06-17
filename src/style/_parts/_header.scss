@@ -22,13 +22,19 @@
 .tt_tel{
   display: flex;
   flex-direction: column;
+  padding-right: 30px;
 }
 .tel_a{
   font-size: 22px;
   font-family: $semibold;
-  margin-left: -30px;
+
   margin-bottom: 5px;
 }
 .email_a{
   text-decoration: underline;
+}
+.tt_form{
+  .btn{
+    margin-left: 0;
+  }
 }
