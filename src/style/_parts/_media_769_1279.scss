@@ -196,7 +196,7 @@
     }
   }
   #map_container{
-    height: 576px;
+    height: 546px;
   }
 
 /*  #map_container{
@@ -219,6 +219,22 @@
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 14px;
+    .logo   .logo-slogan{
+      display: none;
+    }
+    .foot-btns{
+      .btn{
+        display: none;
+      }
+    }
+  }
+  .foot_tel{
+    font-size: 19px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .foot_address span{
+    display: inline;
   }
   .developer{
     font-size: 13px;
@@ -227,5 +243,6 @@
     width: 130px;
     background-size: contain;
   }
+
 
 }

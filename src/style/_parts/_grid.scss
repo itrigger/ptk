@@ -91,7 +91,7 @@
   .l-col-del{display: none;}
 } /*media 1025-1180*/
 
-@media (min-width:769px) and (max-width:1024px) {
+@media (min-width:769px) and (max-width:1279px) {
   .row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
