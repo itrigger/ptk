@@ -75,6 +75,21 @@ const harddelete_notify = function (input) { // тоже самое, тольк�
 /****************/
 /****************/
 
+$('document').ready(function (){
+   $('.service1.s1-1 .img').click(function (){
+       var text = $(this).attr('data-text');
+       $.fancybox.open({
+           src  : '#writeus',
+           type : 'inline',
+           opts : {
+               beforeShow : function( instance, current ) {
+                   $('.textarea-810 textarea').val(text);
+                   console.log(text)
+               }
+           }
+       });
+   });
+});
 
 //закрываем попап алерт СF7
 $('body').on("click", ".wpcf7-response-output", function () {
