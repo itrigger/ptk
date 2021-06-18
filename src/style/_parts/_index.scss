@@ -67,6 +67,9 @@
     border: none;
     font-family: $regular;
   }
+  textarea.form-control{
+    height: 95px;
+  }
 }
 
 .confirm_text{
