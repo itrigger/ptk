@@ -1031,7 +1031,7 @@ table {
   position: relative; }
   .slider h1 {
     font-size: 64px;
-    font-family: "Gilroy-Black";
+    font-family: "Gilroy-Bold";
     line-height: 1.2; }
   .slider .slogan {
     font-family: "Gilroy-Bold";
@@ -1062,7 +1062,7 @@ table {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
   .form .head {
     font-size: 32px;
-    font-family: "Gilroy-Black";
+    font-family: "Gilroy-Bold";
     margin-bottom: 30px; }
   .form .form-control {
     width: 100%;
@@ -1086,7 +1086,7 @@ table {
 h2.head {
   font-size: 48px;
   line-height: 1.4;
-  font-family: "Gilroy-Black";
+  font-family: "Gilroy-Bold";
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
@@ -1311,7 +1311,7 @@ strong {
       color: inherit; }
     .map .form .tel {
       font-size: 32px;
-      font-family: "Gilroy-Black";
+      font-family: "Gilroy-Bold";
       margin-bottom: 20px;
       display: inline-block;
       text-align: center; }

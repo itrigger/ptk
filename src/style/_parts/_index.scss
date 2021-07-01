@@ -8,7 +8,7 @@
 
   h1 {
     font-size: 64px;
-    font-family: $black;
+    font-family: $bold;
     line-height: 1.2;
 
   }
@@ -54,7 +54,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   .head{
     font-size: 32px;
-    font-family: $black;
+    font-family: $bold;
     margin-bottom: 30px;
   }
   .form-control{
@@ -84,7 +84,7 @@
 h2.head{
   font-size: 48px;
   line-height: 1.4;
-  font-family: $black;
+  font-family: $bold;
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
@@ -359,7 +359,7 @@ background: #fff;
     }
     .tel{
       font-size: 32px;
-      font-family: $black;
+      font-family: $bold;
       margin-bottom: 20px;
       display: inline-block;
       text-align: center;
